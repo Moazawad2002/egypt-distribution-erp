@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="topoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090e1a"/>
+      <stop offset="100%" stop-color="#04060c"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#topoBg)"/>
+
+  <!-- Top Title -->
+  <rect x="25" y="15" width="750" height="35" rx="6" fill="#131c2e" stroke="#1e293b"/>
+  <text x="40" y="38" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">Enterprise Multi-Branch Distributed Architecture Topology</text>
+
+  <!-- Left: Client Tier (Multi-Branch Nodes) -->
+  <g transform="translate(25, 65)">
+    <rect width="210" height="360" rx="8" fill="url(#blueCard)" stroke="#1e293b"/>
+    <rect width="210" height="28" rx="8" fill="#1e3a8a"/>
+    <text x="12" y="19" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700">🖥️ TIER 1: CLIENT NODES</text>
+
+    <!-- Node 1: Cairo HQ -->
+    <g transform="translate(12, 40)">
+      <rect width="186" height="58" rx="6" fill="#0b1324" stroke="#1e3a8a"/>
+      <text x="10" y="20" fill="#93c5fd" font-family="sans-serif" font-size="11" font-weight="700">Cairo Central Branch (CAI)</text>
+      <text x="10" y="36" fill="#64748b" font-family="sans-serif" font-size="9.5">Manager, Reps, Inventory Clerk</text>
+      <text x="10" y="50" fill="#38bdf8" font-family="monospace" font-size="9">Role: manager.cairo</text>
+    </g>
+
+    <!-- Node 2: Alexandria Hub -->
+    <g transform="translate(12, 110)">
+      <rect width="186" height="58" rx="6" fill="#0b1324" stroke="#0d9488"/>
+      <text x="10" y="20" fill="#5eead4" font-family="sans-serif" font-size="11" font-weight="700">Alexandria Hub (ALX)</text>
+      <text x="10" y="36" fill="#64748b" font-family="sans-serif" font-size="9.5">Coastal Routes, Warehouse</text>
+      <text x="10" y="50" fill="#2dd4bf" font-family="monospace" font-size="9">Role: manager.alex</text>
+    </g>
+
+    <!-- Node 3: Mansoura Delta -->
+    <g transform="translate(12, 180)">
+      <rect width="186" height="58" rx="6" fill="#0b1324" stroke="#15803d"/>
+      <text x="10" y="20" fill="#86efac" font-family="sans-serif" font-size="11" font-weight="700">Mansoura Delta (MNS)</text>
+      <text x="10" y="36" fill="#64748b" font-family="sans-serif" font-size="9.5">Delta FMCG Supply Hub</text>
+      <text x="10" y="50" fill="#4ade80" font-family="monospace" font-size="9">Role: manager.mansoura</text>
+    </g>
+
+    <!-- Node 4: CEO Laptop -->
+    <g transform="translate(12, 250)">
+      <rect width="186" height="58" rx="6" fill="#0b1324" stroke="#d97706"/>
+      <text x="10" y="20" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="700">CEO Executive Suite</text>
+      <text x="10" y="36" fill="#64748b" font-family="sans-serif" font-size="9.5">Company-wide consolidated view</text>
+      <text x="10" y="50" fill="#fbbf24" font-family="monospace" font-size="9">Scope: Consolidated (All)</text>
+    </g>
+
+    <text x="14" y="340" fill="#94a3b8" font-family="sans-serif" font-size="9">Zero Direct DB Connections</text>
+  </g>
+
+  <!-- Middle: Application Server Tier (Express API) -->
+  <g transform="translate(265, 65)">
+    <rect width="250" height="360" rx="8" fill="url(#blueCard)" stroke="#1e293b"/>
+    <rect width="250" height="28" rx="8" fill="#4f46e5"/>
+    <text x="12" y="19" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700">⚙️ TIER 2: EXPRESS.JS API (PORT 4000)</text>
+
+    <!-- Component 1: Security Gateway -->
+    <g transform="translate(15, 45)">
+      <rect width="220" height="50" rx="6" fill="#111827" stroke="#374151"/>
+      <text x="10" y="20" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">JWT Authentication &amp; RBAC</text>
+      <text x="10" y="38" fill="#94a3b8" font-family="sans-serif" font-size="9.5">Validates tokens &amp; role permissions</text>
+    </g>
+
+    <!-- Component 2: Branch Scoping Middleware -->
+    <g transform="translate(15, 105)">
+      <rect width="220" height="58" rx="6" fill="#111827" stroke="#ef4444" stroke-width="1.2"/>
+      <text x="10" y="20" fill="#fca5a5" font-family="sans-serif" font-size="11" font-weight="700">Strict Server-Side Branch Scoping</text>
+      <text x="10" y="36" fill="#94a3b8" font-family="sans-serif" font-size="9.5">Rejects cross-branch queries with 403</text>
+      <text x="10" y="50" fill="#f87171" font-family="monospace" font-size="8.5">WHERE branch_id = user.branch_id</text>
+    </g>
+
+    <!-- Component 3: Prisma ORM -->
+    <g transform="translate(15, 175)">
+      <rect width="220" height="50" rx="6" fill="#111827" stroke="#374151"/>
+      <text x="10" y="20" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">Prisma ORM &amp; Migrations</text>
+      <text x="10" y="38" fill="#94a3b8" font-family="sans-serif" font-size="9.5">Type-safe queries, migration history</text>
+    </g>
+
+    <!-- Component 4: REST API Endpoints -->
+    <g transform="translate(15, 235)">
+      <rect width="220" height="60" rx="6" fill="#111827" stroke="#374151"/>
+      <text x="10" y="20" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">30+ Authenticated Endpoints</text>
+      <text x="10" y="36" fill="#94a3b8" font-family="monospace" font-size="8.5">/api/v1/invoices • /api/v1/branches</text>
+      <text x="10" y="50" fill="#94a3b8" font-family="monospace" font-size="8.5">/api/v1/transfers • /api/v1/analytics</text>
+    </g>
+
+    <text x="15" y="340" fill="#10b981" font-family="sans-serif" font-size="9">Docker Containerized (Alpine Linux)</text>
+  </g>
+
+  <!-- Right: Database Tier (PostgreSQL 16) -->
+  <g transform="translate(545, 65)">
+    <rect width="230" height="360" rx="8" fill="url(#blueCard)" stroke="#1e293b"/>
+    <rect width="230" height="28" rx="8" fill="#0284c7"/>
+    <text x="12" y="19" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700">🗄️ TIER 3: POSTGRESQL 16</text>
+
+    <!-- Feature 1: NUMERIC Precision -->
+    <g transform="translate(12, 45)">
+      <rect width="206" height="55" rx="6" fill="#0c1322" stroke="#0284c7"/>
+      <text x="10" y="20" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700">Financial Rounding Shield</text>
+      <text x="10" y="36" fill="#94a3b8" font-family="sans-serif" font-size="9">NUMERIC(14,2) decimal storage</text>
+      <text x="10" y="48" fill="#34d399" font-family="monospace" font-size="8.5">0.00 EGP rounding drift</text>
+    </g>
+
+    <!-- Feature 2: Multi-Branch Schemas -->
+    <g transform="translate(12, 110)">
+      <rect width="206" height="60" rx="6" fill="#0c1322" stroke="#1e293b"/>
+      <text x="10" y="20" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">Relational Branch Models</text>
+      <text x="10" y="36" fill="#94a3b8" font-family="sans-serif" font-size="9">branches, users, products,</text>
+      <text x="10" y="50" fill="#94a3b8" font-family="sans-serif" font-size="9">invoices, invoice_items, stock</text>
+    </g>
+
+    <!-- Feature 3: Inter-Branch Stock Transfers -->
+    <g transform="translate(12, 180)">
+      <rect width="206" height="60" rx="6" fill="#0c1322" stroke="#1e293b"/>
+      <text x="10" y="20" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">Stock Transfer Tracking</text>
+      <text x="10" y="36" fill="#94a3b8" font-family="sans-serif" font-size="9">In-Transit custody verification</text>
+      <text x="10" y="50" fill="#94a3b8" font-family="monospace" font-size="8.5">status: REQUESTED ➔ IN_TRANSIT ➔ RECONCILED</text>
+    </g>
+
+    <!-- Feature 4: Immutable Audit Trail -->
+    <g transform="translate(12, 250)">
+      <rect width="206" height="55" rx="6" fill="#0c1322" stroke="#1e293b"/>
+      <text x="10" y="20" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="700">Immutable Audit Trail</text>
+      <text x="10" y="36" fill="#94a3b8" font-family="sans-serif" font-size="9">Logs all discount overrides,</text>
+      <text x="10" y="48" fill="#94a3b8" font-family="sans-serif" font-size="9">voids, and price tier changes</text>
+    </g>
+
+    <text x="14" y="340" fill="#94a3b8" font-family="sans-serif" font-size="9">PostgreSQL on Port 5432</text>
+  </g>
+</svg>

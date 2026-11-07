@@ -2,7 +2,24 @@
 ### Food & Consumer Goods Distribution — Cairo • Alexandria • Mansoura (Egypt)
 
 <p align="center">
-  <img src="docs/preview.svg" alt="Enterprise Multi-Branch Desktop ERP Console" width="100%">
+  <img src="assets/screenshots/01-multi-branch-executive-console.svg" alt="Enterprise Multi-Branch Desktop ERP Console" width="100%">
+</p>
+
+---
+
+## 📐 System Architecture & Desktop Console Diagrams
+*(Architecture Visualizations & UI Specifications — Multi-branch distributed design specifications for Cairo, Alexandria, and Mansoura hubs).*
+
+### 1. Multi-Branch Executive Desktop Console
+<p align="center">
+  <img src="assets/screenshots/01-multi-branch-executive-console.svg" alt="Multi-Branch Console" width="100%">
+  <em>Figure 1: Consolidated CEO Overview comparing Cairo, Alexandria, and Mansoura operations, tracking 14.85M EGP revenue and real-time inter-branch stock convoys.</em>
+</p>
+
+### 2. Multi-Branch Distributed Architecture Topology
+<p align="center">
+  <img src="assets/screenshots/02-system-architecture-topology.svg" alt="Architecture Topology" width="100%">
+  <em>Figure 2: Three-tier enterprise topology connecting regional desktop clients over TLS 1.3 to containerized Express.js REST APIs and PostgreSQL 16 Enterprise.</em>
 </p>
 
 ---

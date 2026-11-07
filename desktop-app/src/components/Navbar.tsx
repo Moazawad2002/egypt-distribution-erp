@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
         {/* Backend Online Pill */}
         <div className="hidden sm:flex items-center gap-2 px-2.5 py-1 rounded-md bg-emerald-950/60 border border-emerald-800/60 text-emerald-400 text-xs font-medium">
           <Activity className="w-3.5 h-3.5 text-emerald-400" />
-          <span>API Online (Port 4000)</span>
+          <span>Demo Engine (Isolated Data)</span>
         </div>
 
         {/* Language Switcher */}
