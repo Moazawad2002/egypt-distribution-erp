@@ -1,0 +1,29 @@
+{
+  "name": "egypt-distribution-erp-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise Desktop ERP & Business Analytics System for Egyptian Distribution Operations",
+  "scripts": {
+    "dev:backend": "npm run --prefix backend dev",
+    "dev:desktop": "npm run --prefix desktop-app dev",
+    "build:backend": "npm run --prefix backend build",
+    "build:desktop": "npm run --prefix desktop-app build",
+    "test:backend": "npm run --prefix backend test",
+    "test:desktop": "npm run --prefix desktop-app test",
+    "seed:backend": "npm run --prefix backend seed",
+    "prisma:generate": "npm run --prefix backend prisma:generate",
+    "prisma:migrate": "npm run --prefix backend prisma:migrate"
+  },
+  "keywords": [
+    "erp",
+    "electron",
+    "react",
+    "typescript",
+    "postgresql",
+    "prisma",
+    "egypt",
+    "fmcg"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "UNLICENSED"
+}
