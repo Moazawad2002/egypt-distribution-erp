@@ -1,6 +1,10 @@
 # Enterprise Desktop ERP & Business Analytics System
 ### Food & Consumer Goods Distribution — Cairo • Alexandria • Mansoura (Egypt)
 
+<p align="center">
+  <img src="docs/preview.svg" alt="Enterprise Multi-Branch Desktop ERP Console" width="100%">
+</p>
+
 ---
 
 ## 1. Executive Summary & Architecture
